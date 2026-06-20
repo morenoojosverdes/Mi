@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: tiktok-rewards-bot
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: BOT_TOKEN
+        value: ""
+      - key: ADMIN_IDS
+        value: ""
